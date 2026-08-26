@@ -8,7 +8,7 @@ A standalone, responsive website for Bearma Staal, suitable for static hosting s
 - `about/index.html` — About
 - `services/index.html` — Services
 - `gallery/index.html` — Gallery
-- `contact/index.html` — Contact
+- `contacts/index.html` — Contact
 
 ## Included
 
