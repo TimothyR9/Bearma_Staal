@@ -1,225 +1,259 @@
+/* =========================================
+   BEARMA STAAL — INDUSTRIAL IRON TEXT THEME
+========================================= */
+
 :root{
---forge:#173F8A;
---forge2:#0B235A;
 
-/* STEEL / SILVER PALETTE */
---steel-light:#D9DEE5;
---steel:#B8BDC6;
---steel-mid:#8F98A5;
---steel2:#6E7784;
+  /* MAIN IRON / MACHINE STEEL COLOURS */
 
---safety:#2F66C5;
---parchment:#F1F3F5;
---ink:#18202B;
---white:#D9DEE5;
+  --iron-light:#C2C5C7;
+  --iron:#9A9EA1;
+  --iron-mid:#74797D;
+  --iron-dark:#555A5E;
 
---line:rgba(23,63,138,.16);
---max:1400px
+  /* Replace existing text colours */
+
+  --white:#C2C5C7;
+  --steel:#9A9EA1;
+  --steel-mid:#74797D;
+  --steel2:#555A5E;
+
 }
 
-/* GLOBAL TEXT */
+
+/* =========================================
+   ALL MAIN HEADINGS
+========================================= */
+
+h1,
+h2,
+h3,
+h4{
+  color:var(--iron-light);
+}
+
+
+/* =========================================
+   DARK SECTIONS
+========================================= */
 
 .dark{
-background:var(--forge2);
-color:var(--steel-light);
-position:relative;
-overflow:hidden
+  color:var(--iron);
 }
 
 .dark h1,
 .dark h2,
 .dark h3,
 .dark h4{
-color:var(--steel-light)
+  color:var(--iron-light);
 }
 
-/* BUTTONS */
-
-.btn-primary{
-background:var(--safety);
-color:var(--steel-light)
+.dark p{
+  color:var(--iron);
 }
 
-.btn-dark{
-background:var(--forge2);
-color:var(--steel-light)
-}
 
-.btn-outline{
-border-color:rgba(184,189,198,.55);
-color:var(--steel-light)
-}
-
-.btn-outline:hover{
-border-color:var(--steel);
-color:var(--steel-light)
-}
-
-/* HEADER */
-
-.navlinks a{
-color:rgba(184,189,198,.78)
-}
-
-.navlinks a:hover,
-.navlinks a.active{
-color:var(--steel-light)
-}
-
-.hamb{
-color:var(--steel-light)
-}
-
-.mobile-menu a{
-color:var(--steel-light)
-}
-
-/* HERO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero{
-min-height:760px;
-padding:170px 0 110px;
-display:flex;
-align-items:center;
-background:var(--forge2);
-color:var(--steel-light);
-position:relative;
-overflow:hidden
+  color:var(--iron-light);
 }
 
 .hero h1{
-color:var(--steel-light)
+  color:var(--iron-light);
 }
 
-.lead{
-font-size:1.12rem;
-color:var(--steel);
-max-width:680px;
-margin:25px 0 32px
+.hero .lead{
+  color:var(--iron);
 }
 
 .hero-stat span{
-color:var(--steel)
+  color:var(--iron);
 }
 
-/* CONTENT */
 
-.section-head p{
-color:var(--steel2)
-}
-
-.dark .section-head p{
-color:var(--steel)
-}
-
-.copy p{
-color:var(--steel2)
-}
-
-.dark .copy p{
-color:var(--steel)
-}
-
-/* DARK CARDS */
-
-.dark .card{
-background:rgba(255,255,255,.055);
-border-color:rgba(184,189,198,.22);
-box-shadow:none;
-color:var(--steel-light)
-}
-
-.dark .card h3{
-color:var(--steel-light)
-}
-
-.dark .card p{
-color:var(--steel)
-}
-
-/* GALLERY */
-
-.gallery-caption{
-color:var(--steel-light)
-}
-
-.gallery-caption small{
-color:var(--steel)
-}
-
-.gallery-caption h3{
-color:var(--steel-light)
-}
-
-.meta{
-color:var(--steel)
-}
-
-/* TESTIMONIALS */
-
-.quote{
-font-size:1rem;
-color:var(--steel-light)!important
-}
-
-.person strong{
-color:var(--steel-light)
-}
-
-.person span{
-color:var(--steel)
-}
-
-/* FOOTER */
-
-footer{
-background:var(--forge2);
-color:var(--steel-light);
-padding:65px 0 25px;
-border-top:1px solid rgba(184,189,198,.25)
-}
-
-.footer p,
-.footer li{
-color:var(--steel);
-font-size:.86rem
-}
-
-.footer a{
-color:var(--steel)
-}
-
-.footer a:hover{
-color:var(--steel-light)
-}
-
-.footer-title{
-color:var(--steel-light);
-margin-bottom:16px
-}
-
-.copyright{
-color:var(--steel)
-}
-
-/* PAGE HERO */
+/* =========================================
+   PAGE HERO
+========================================= */
 
 .page-hero{
-padding:150px 0 85px;
-background:var(--forge2);
-color:var(--steel-light);
-position:relative;
-overflow:hidden
+  color:var(--iron-light);
 }
 
 .page-hero h1,
 .page-hero h2{
-color:var(--steel-light)
+  color:var(--iron-light);
 }
 
 .page-hero p{
-color:var(--steel);
-max-width:700px;
-font-size:1.05rem;
-margin:20px 0 0
+  color:var(--iron);
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navlinks a{
+  color:var(--iron);
+}
+
+.navlinks a:hover,
+.navlinks a.active{
+  color:var(--iron-light);
+}
+
+.phone{
+  color:var(--iron);
+}
+
+.email-mini{
+  color:var(--iron-light);
+}
+
+.hamb{
+  color:var(--iron-light);
+}
+
+.mobile-menu a{
+  color:var(--iron-light);
+}
+
+
+/* =========================================
+   BUTTON TEXT
+========================================= */
+
+.btn-primary{
+  color:var(--iron-light);
+}
+
+.btn-dark{
+  color:var(--iron-light);
+}
+
+.btn-outline{
+  color:var(--iron-light);
+  border-color:var(--iron-mid);
+}
+
+.btn-outline:hover{
+  color:var(--iron-light);
+  border-color:var(--iron-light);
+}
+
+
+/* =========================================
+   NORMAL CONTENT
+========================================= */
+
+.section-head p{
+  color:var(--iron-dark);
+}
+
+.copy p{
+  color:var(--iron-dark);
+}
+
+.dark .section-head p,
+.dark .copy p{
+  color:var(--iron);
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.card h1,
+.card h2,
+.card h3,
+.card h4{
+  color:var(--iron-dark);
+}
+
+.card p{
+  color:var(--iron-dark);
+}
+
+.dark .card{
+  color:var(--iron);
+}
+
+.dark .card h1,
+.dark .card h2,
+.dark .card h3,
+.dark .card h4{
+  color:var(--iron-light);
+}
+
+.dark .card p{
+  color:var(--iron);
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery-caption{
+  color:var(--iron-light);
+}
+
+.gallery-caption h3{
+  color:var(--iron-light);
+}
+
+.gallery-caption small{
+  color:var(--iron);
+}
+
+.meta{
+  color:var(--iron);
+}
+
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.quote{
+  color:var(--iron-light)!important;
+}
+
+.person strong{
+  color:var(--iron-light);
+}
+
+.person span{
+  color:var(--iron);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  color:var(--iron-light);
+}
+
+.footer-title{
+  color:var(--iron-light);
+}
+
+.footer p,
+.footer li,
+.footer a{
+  color:var(--iron);
+}
+
+.footer a:hover{
+  color:var(--iron-light);
+}
+
+.copyright{
+  color:var(--iron-mid);
 }
