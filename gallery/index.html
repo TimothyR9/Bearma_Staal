@@ -13,6 +13,30 @@
     >
 
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Gallery image fix:
+         All product images use the live GitHub Pages asset path.
+         Images are contained in a fixed card area so portrait/wide source
+         photographs do not create oversized cards. -->
+    <style>
+        .gallery-grid .gallery-item {
+            overflow: hidden;
+        }
+
+        .gallery-grid .gallery-item > img {
+            display: block;
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 700px) {
+            .gallery-grid .gallery-item > img {
+                height: 260px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +47,7 @@
             <a href="../">
                 <img
                     class="logo"
-                    src="../assets/images/bearma-staal-logo.svg"
+                    src="https://timothyr9.github.io/Bearma_Staal/assets/images/bearma-staal-logo.svg"
                     alt="Bearma Staal"
                 >
             </a>
@@ -76,12 +100,10 @@
         </div>
     </header>
 
-
     <main>
 
         <section class="page-hero">
             <div class="container">
-
                 <div class="eyebrow">
                     <i></i>
                     <span class="tech">REF: PROJ-GALLERY</span>
@@ -92,998 +114,417 @@
                 <p>
                     A selection of our machinery, fabrication and structural steel work.
                 </p>
-
             </div>
         </section>
 
-
         <section class="section">
-
             <div class="container">
 
                 <div class="filters reveal">
-
-                    <button
-                        class="filter active chamfer-sm"
-                        data-filter="all"
-                    >
+                    <button class="filter active chamfer-sm" data-filter="all">
                         All
                     </button>
 
-                    <button
-                        class="filter chamfer-sm"
-                        data-filter="machinery"
-                    >
+                    <button class="filter chamfer-sm" data-filter="machinery">
                         Machinery
                     </button>
 
-                    <button
-                        class="filter chamfer-sm"
-                        data-filter="fabrication"
-                    >
+                    <button class="filter chamfer-sm" data-filter="fabrication">
                         Fabrication
                     </button>
 
-                    <button
-                        class="filter chamfer-sm"
-                        data-filter="structural"
-                    >
+                    <button class="filter chamfer-sm" data-filter="structural">
                         Structural
                     </button>
-
                 </div>
-
 
                 <div class="gallery-grid">
 
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/project-weld.svg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/project-weld.svg"
                             alt="TIG Weld Assembly — Fabrication project by Bearma Staal"
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>TIG Weld Assembly</h3>
-                            <div class="meta">
-                                Material: SS-304 · Process: TIG
-                            </div>
+                            <div class="meta">Material: SS-304 · Process: TIG</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/project-elevator.svg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/project-elevator.svg"
                             alt="Bucket Elevator System — Machinery project by Bearma Staal"
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Bucket Elevator System</h3>
-                            <div class="meta">
-                                Industry: Food &amp; Bev · Material: SS-316
-                            </div>
+                            <div class="meta">Industry: Food & Bev · Material: SS-316</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="structural"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="structural">
                         <img
                             loading="lazy"
-                            src="../assets/images/project-structure.svg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/project-structure.svg"
                             alt="Structural Steel Framework — Structural project by Bearma Staal"
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Structural</small>
                             <h3>Structural Steel Framework</h3>
-                            <div class="meta">
-                                Material: Mild Steel · Location: Paarl
-                            </div>
+                            <div class="meta">Material: Mild Steel · Location: Paarl</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/project-workshop.svg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/project-workshop.svg"
                             alt="Workshop Fabrication — Bearma Staal"
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>Workshop Fabrication</h3>
-                            <div class="meta">
-                                Capability: In-house · Process: Multi-stage
-                            </div>
+                            <div class="meta">Capability: In-house · Process: Multi-stage</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/project-engineering.svg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/project-engineering.svg"
                             alt="Design and Engineering Review — Bearma Staal"
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
-                            <h3>Design &amp; Engineering Review</h3>
-                            <div class="meta">
-                                Phase: Design · Team: Engineering
-                            </div>
+                            <h3>Design & Engineering Review</h3>
+                            <div class="meta">Phase: Design · Team: Engineering</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/project-cnc.svg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/project-cnc.svg"
                             alt="CNC Laser Cutting — Bearma Staal"
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>CNC Laser Cutting</h3>
-                            <div class="meta">
-                                Process: Laser Cut · Material: SS-304
-                            </div>
+                            <div class="meta">Process: Laser Cut · Material: SS-304</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/assorted-gravity-roller-conveyors.jpg"
-                            alt="Assorted gravity roller conveyor systems for material handling. The product information identifies gravity and driven roller conveyors as the main types."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/assorted-gravity-roller-conveyors.jpg"
+                            alt="Assorted gravity roller conveyor systems for material handling."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Assorted Gravity Roller Conveyors</h3>
-                            <div class="meta">
-                                Roller Conveyor Systems · Gravity Conveying
-                            </div>
+                            <div class="meta">Roller Conveyor Systems · Gravity Conveying</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/driven-roller-pallet-conveyor.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/driven-roller-pallet-conveyor.jpg"
                             alt="Driven roller conveyor equipment designed for pallet handling and controlled material movement."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Driven Roller Pallet Conveyor</h3>
-                            <div class="meta">
-                                Pallet Handling · Driven Roller System
-                            </div>
+                            <div class="meta">Pallet Handling · Driven Roller System</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/gravity-roller-conveyor.jpg"
-                            alt="Gravity roller conveyor equipment for straightforward product and material movement. Roller conveyor systems include gravity and driven types."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/gravity-roller-conveyor.jpg"
+                            alt="Gravity roller conveyor equipment for product and material movement."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Gravity Roller Conveyor</h3>
-                            <div class="meta">
-                                Gravity Conveying · Roller Conveyor System
-                            </div>
+                            <div class="meta">Gravity Conveying · Roller Conveyor System</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/radius-belt-modular-chain-belt.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/radius-belt-modular-chain-belt.jpg"
                             alt="Modular chain-belt conveying for product transfer through curved layouts and processing areas."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Radius-Belt Modular Chain Belt</h3>
-                            <div class="meta">
-                                Food-Grade Conveying · Modular Belt
-                            </div>
+                            <div class="meta">Food-Grade Conveying · Modular Belt</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/broad-gooseneck-flighted-modular-belt-elevator.jpg"
-                            alt="Food-grade modular conveyor equipment for transferring and elevating packaged goods. Typically fabricated in grade 304 stainless steel for general food-factory applications, with grade 316 available for corrosive environments."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/broad-gooseneck-flighted-modular-belt-elevator.jpg"
+                            alt="Food-grade modular conveyor equipment for transferring and elevating products."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Broad Gooseneck Flighted Modular Belt Elevator</h3>
-                            <div class="meta">
-                                Food Grade · Product Elevation · Modular Belt
-                            </div>
+                            <div class="meta">Food Grade · Product Elevation · Modular Belt</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/gooseneck-flighted-modular-belt-elevator.jpg"
-                            alt="Flighted modular belt elevator for product elevation. Modular conveyors can be manufactured in various lengths and widths."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/gooseneck-flighted-modular-belt-elevator.jpg"
+                            alt="Flighted modular belt elevator for product elevation."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Gooseneck Flighted Modular Belt Elevator</h3>
-                            <div class="meta">
-                                Food Grade · Product Elevation · Flighted Elevator
-                            </div>
+                            <div class="meta">Food Grade · Product Elevation · Flighted Elevator</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/catering-stainless-steel-kitchen.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/catering-stainless-steel-kitchen.jpg"
                             alt="Custom stainless-steel kitchen fabrication for catering and food-service applications."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>Catering Stainless Steel Kitchen</h3>
-                            <div class="meta">
-                                Custom Kitchen · Stainless Steel · Food Industry
-                            </div>
+                            <div class="meta">Custom Kitchen · Stainless Steel · Food Industry</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/custom-home-grade-kitchen-counter-top.jpg"
-                            alt="Customized kitchen tops made to suit specific dimensions, applications and requirements. Hand-fabricated sink bowls can include rounded corners and integral splashbacks."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/custom-home-grade-kitchen-counter-top.jpg"
+                            alt="Custom kitchen tops made to suit specific dimensions and requirements."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>Custom Home-Grade Kitchen Counter Top</h3>
-                            <div class="meta">
-                                Custom Kitchen · Stainless Steel · Counter Tops
-                            </div>
+                            <div class="meta">Custom Kitchen · Stainless Steel · Counter Tops</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/custom-large-scullerie-and-catering-kitchen.jpg"
-                            alt="Custom stainless-steel scullery and catering kitchen fabrication. Sinks can be supplied with full stainless-steel frames, pot racks and doors."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/custom-large-scullerie-and-catering-kitchen.jpg"
+                            alt="Custom stainless-steel scullery and catering kitchen fabrication."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>Custom Large Scullerie and Catering Kitchen</h3>
-                            <div class="meta">
-                                Scullery · Catering Kitchen · Stainless Steel
-                            </div>
+                            <div class="meta">Scullery · Catering Kitchen · Stainless Steel</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/equipment-sterilizer-sump.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/equipment-sterilizer-sump.jpg"
                             alt="Stainless-steel equipment associated with cheesery and dairy applications."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Equipment Sterilizer Sump</h3>
-                            <div class="meta">
-                                Cheesery &amp; Dairy Equipment · Stainless Steel
-                            </div>
+                            <div class="meta">Cheesery & Dairy Equipment · Stainless Steel</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/industrial-cheese-cutter.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/industrial-cheese-cutter.jpg"
                             alt="Industrial cheese-processing equipment for cheesery and dairy applications."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Industrial Cheese Cutter</h3>
-                            <div class="meta">
-                                Cheesery &amp; Dairy Equipment · Food Processing
-                            </div>
+                            <div class="meta">Cheesery & Dairy Equipment · Food Processing</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/single-brush-type-boot-washer.jpg"
-                            alt="Boot-washing and PPE equipment fabricated and installed in grade 304 or 316 stainless steel."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/single-brush-type-boot-washer.jpg"
+                            alt="Boot-washing and PPE equipment fabricated in stainless steel."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Single Brush Type Boot Washer</h3>
-                            <div class="meta">
-                                PPE Equipment · Boot Washing · Stainless Steel
-                            </div>
+                            <div class="meta">PPE Equipment · Boot Washing · Stainless Steel</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/single-knee-operated-handwasher.jpg"
-                            alt="Knee-operated handwashing equipment for hygienic food-processing environments. Available in grade 304 or 316 stainless steel."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/single-knee-operated-handwasher.jpg"
+                            alt="Knee-operated handwashing equipment for hygienic food-processing environments."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Single Knee-Operated Handwasher</h3>
-                            <div class="meta">
-                                Hand Washing · Hygiene Equipment · Stainless Steel
-                            </div>
+                            <div class="meta">Hand Washing · Hygiene Equipment · Stainless Steel</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/2-man-knee-operated-handwasher.jpg"
-                            alt="Two-person knee-operated handwashing equipment for food-processing and hygiene applications."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/2-man-knee-operated-handwasher.jpg"
+                            alt="Two-person knee-operated handwashing equipment for food-processing environments."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>2-Man Knee-Operated Handwasher</h3>
-                            <div class="meta">
-                                Hand Washing · Hygiene Equipment · Stainless Steel
-                            </div>
+                            <div class="meta">Hand Washing · Hygiene Equipment · Stainless Steel</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/strainer-basket.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/strainer-basket.jpg"
                             alt="Stainless-steel strainer basket equipment for food-processing applications."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Strainer Basket</h3>
-                            <div class="meta">
-                                Dairy &amp; Food Processing · Stainless Steel
-                            </div>
+                            <div class="meta">Dairy & Food Processing · Stainless Steel</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/blender-mixing-ribbon.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/blender-mixing-ribbon.jpg"
                             alt="Ribbon blender mixing components for food-grade processing applications."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Blender Mixing Ribbon</h3>
-                            <div class="meta">
-                                Ribbon Blender · Mixing Equipment
-                            </div>
+                            <div class="meta">Ribbon Blender · Mixing Equipment</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/100l-premix-ribbon-blender.jpg"
-                            alt="A 100L premix ribbon blender for controlled mixing applications."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/100l-premix-ribbon-blender.jpg"
+                            alt="100L premix ribbon blender for controlled mixing applications."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>100L Premix Ribbon Blender</h3>
-                            <div class="meta">
-                                Ribbon Blender · 100L · Food Processing
-                            </div>
+                            <div class="meta">Ribbon Blender · 100L · Food Processing</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/150l-flour-mix-ribbon-blender-with-transfer-screw.jpg"
-                            alt="A 150L flour-mix ribbon blender with transfer screw for integrated mixing and product transfer."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/150l-flour-mix-ribbon-blender-with-transfer-screw.jpg"
+                            alt="150L flour-mix ribbon blender with transfer screw."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>150L Flour Mix Ribbon Blender with Transfer Screw</h3>
-                            <div class="meta">
-                                Ribbon Blender · 150L · Transfer Screw
-                            </div>
+                            <div class="meta">Ribbon Blender · 150L · Transfer Screw</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="machinery">
                         <img
                             loading="lazy"
-                            src="../assets/images/ribbon-blender-transfer-screw.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/ribbon-blender-transfer-screw.jpg"
                             alt="Ribbon blender and transfer-screw equipment for integrated mixing and product transfer."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Machinery</small>
                             <h3>Ribbon Blender with Transfer Screw</h3>
-                            <div class="meta">
-                                Ribbon Blender · Transfer Screw · Food Processing
-                            </div>
+                            <div class="meta">Ribbon Blender · Transfer Screw · Food Processing</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/small-custom-stainless-steel-counter-top.jpg"
-                            alt="Small custom stainless-steel counter-top fabrication made to application-specific dimensions."
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/small-custom-stainless-steel-counter-top.jpg"
+                            alt="Small custom stainless-steel counter-top fabrication."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>Small Custom Stainless Steel Counter Top</h3>
-                            <div class="meta">
-                                Custom Fabrication · Stainless Steel · Counter Top
-                            </div>
+                            <div class="meta">Custom Fabrication · Stainless Steel · Counter Top</div>
                         </figcaption>
                     </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
+                    <figure class="gallery-item chamfer reveal" data-category="fabrication">
                         <img
                             loading="lazy"
-                            src="../assets/images/stainless-steel-kitchen.jpg"
+                            src="https://timothyr9.github.io/Bearma_Staal/assets/images/stainless-steel-kitchen.jpg"
                             alt="Stainless-steel kitchen fabrication for commercial and food-industry environments."
+                            width="1200"
+                            height="675"
                         >
                         <figcaption class="gallery-caption">
                             <small>Fabrication</small>
                             <h3>Stainless Steel Kitchen</h3>
-                            <div class="meta">
-                                Commercial Kitchen · Stainless Steel · Food Industry
-                            </div>
+                            <div class="meta">Commercial Kitchen · Stainless Steel · Food Industry</div>
                         </figcaption>
                     </figure>
 
                 </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/project-elevator.svg"
-                            alt="Bucket Elevator System — Machinery project by Bearma Staal"
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Bucket Elevator System</h3>
-                            <div class="meta">
-                                Industry: Food &amp; Bev · Material: SS-316
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="structural"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/project-structure.svg"
-                            alt="Structural Steel Framework — Structural project by Bearma Staal"
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Structural</small>
-                            <h3>Structural Steel Framework</h3>
-                            <div class="meta">
-                                Material: Mild Steel · Location: Paarl
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/project-workshop.svg"
-                            alt="Workshop Fabrication — Bearma Staal"
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>Workshop Fabrication</h3>
-                            <div class="meta">
-                                Capability: In-house · Process: Multi-stage
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/project-engineering.svg"
-                            alt="Design and Engineering Review — Bearma Staal"
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Design &amp; Engineering Review</h3>
-                            <div class="meta">
-                                Phase: Design · Team: Engineering
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/project-cnc.svg"
-                            alt="CNC Laser Cutting — Bearma Staal"
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>CNC Laser Cutting</h3>
-                            <div class="meta">
-                                Process: Laser Cut · Material: SS-304
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/assorted-gravity-roller-conveyors.jpg"
-                            alt="Assorted gravity roller conveyor systems for material handling. The product information identifies gravity and driven roller conveyors as the main types."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Assorted Gravity Roller Conveyors</h3>
-                            <div class="meta">
-                                Roller Conveyor Systems · Gravity Conveying
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/driven-roller-pallet-conveyor.jpg"
-                            alt="Driven roller conveyor equipment designed for pallet handling and controlled material movement."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Driven Roller Pallet Conveyor</h3>
-                            <div class="meta">
-                                Pallet Handling · Driven Roller System
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/radius-belt-modular-chain-belt.jpg"
-                            alt="Modular chain-belt conveying for product transfer through curved layouts and processing areas."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Radius-Belt Modular Chain Belt</h3>
-                            <div class="meta">
-                                Food-Grade Conveying · Modular Belt
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/broad-gooseneck-flighted-modular-belt-elevator.jpg"
-                            alt="Food-grade modular conveyor equipment for transferring and elevating packaged goods. Typically fabricated in grade 304 stainless steel for general food-factory applications, with grade 316 available for corrosive environments."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Broad Gooseneck Flighted Modular Belt Elevator</h3>
-                            <div class="meta">
-                                Food Grade · Product Elevation · Modular Belt
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/gooseneck-flighted-modular-belt-elevator.jpg"
-                            alt="Flighted modular belt elevator for product elevation. Modular conveyors can be manufactured in various lengths and widths."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Gooseneck Flighted Modular Belt Elevator</h3>
-                            <div class="meta">
-                                Food Grade · Product Elevation · Flighted Elevator
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/catering-stainless-steel-kitchen.jpg"
-                            alt="Custom stainless-steel kitchen fabrication for catering and food-service applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>Catering Stainless Steel Kitchen</h3>
-                            <div class="meta">
-                                Custom Kitchen · Stainless Steel · Food Industry
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/custom-home-grade-kitchen-counter-top.jpg"
-                            alt="Customized kitchen tops made to suit specific dimensions, applications and requirements. Hand-fabricated sink bowls can include rounded corners and integral splashbacks."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>Custom Home-Grade Kitchen Counter Top</h3>
-                            <div class="meta">
-                                Custom Kitchen · Stainless Steel · Counter Tops
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/custom-large-scullerie-and-catering-kitchen.jpg"
-                            alt="Custom stainless-steel scullery and catering kitchen fabrication. Sinks can be supplied with full stainless-steel frames, pot racks and doors."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>Custom Large Scullerie and Catering Kitchen</h3>
-                            <div class="meta">
-                                Scullery · Catering Kitchen · Stainless Steel
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/equipment-sterilizer-sump.jpg"
-                            alt="Stainless-steel equipment associated with cheesery and dairy applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Equipment Sterilizer Sump</h3>
-                            <div class="meta">
-                                Cheesery &amp; Dairy Equipment · Stainless Steel
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/industrial-cheese-cutter.jpg"
-                            alt="Industrial cheese-processing equipment for cheesery and dairy applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Industrial Cheese Cutter</h3>
-                            <div class="meta">
-                                Cheesery &amp; Dairy Equipment · Food Processing
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/single-brush-type-boot-washer.jpg"
-                            alt="Boot-washing and PPE equipment fabricated and installed in grade 304 or 316 stainless steel."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Single Brush Type Boot Washer</h3>
-                            <div class="meta">
-                                PPE Equipment · Boot Washing · Stainless Steel
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/single-knee-operated-handwasher.jpg"
-                            alt="Knee-operated handwashing equipment for hygienic food-processing environments. Available in grade 304 or 316 stainless steel."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Single Knee-Operated Handwasher</h3>
-                            <div class="meta">
-                                Hand Washing · Hygiene Equipment · Stainless Steel
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/2-man-knee-operated-handwasher.jpg"
-                            alt="Two-person knee-operated handwashing equipment for food-processing and hygiene applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>2-Man Knee-Operated Handwasher</h3>
-                            <div class="meta">
-                                Hand Washing · Hygiene Equipment · Stainless Steel
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/strainer-basket.jpg"
-                            alt="Stainless-steel strainer basket equipment for food-processing applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Strainer Basket</h3>
-                            <div class="meta">
-                                Dairy &amp; Food Processing · Stainless Steel
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/blender-mixing-ribbon.jpg"
-                            alt="Ribbon blender mixing components for food-grade processing applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Blender Mixing Ribbon</h3>
-                            <div class="meta">
-                                Ribbon Blender · Mixing Equipment
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/100l-premix-ribbon-blender.jpg"
-                            alt="A 100L premix ribbon blender for controlled mixing applications."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>100L Premix Ribbon Blender</h3>
-                            <div class="meta">
-                                Ribbon Blender · 100L · Food Processing
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/150l-flour-mix-ribbon-blender-with-transfer-screw.jpg"
-                            alt="A 150L flour-mix ribbon blender with transfer screw for integrated mixing and product transfer."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>150L Flour Mix Ribbon Blender with Transfer Screw</h3>
-                            <div class="meta">
-                                Ribbon Blender · 150L · Transfer Screw
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="machinery"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/ribbon-blender-transfer-screw.jpg"
-                            alt="Ribbon blender and transfer-screw equipment for integrated mixing and product transfer."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Machinery</small>
-                            <h3>Ribbon Blender with Transfer Screw</h3>
-                            <div class="meta">
-                                Ribbon Blender · Transfer Screw · Food Processing
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/small-custom-stainless-steel-counter-top.jpg"
-                            alt="Small custom stainless-steel counter-top fabrication made to application-specific dimensions."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>Small Custom Stainless Steel Counter Top</h3>
-                            <div class="meta">
-                                Custom Fabrication · Stainless Steel · Counter Top
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure
-                        class="gallery-item chamfer reveal"
-                        data-category="fabrication"
-                    >
-                        <img
-                            loading="lazy"
-                            src="../assets/images/stainless-steel-kitchen.jpg"
-                            alt="Stainless-steel kitchen fabrication for commercial and food-industry environments."
-                        >
-                        <figcaption class="gallery-caption">
-                            <small>Fabrication</small>
-                            <h3>Stainless Steel Kitchen</h3>
-                            <div class="meta">
-                                Commercial Kitchen · Stainless Steel · Food Industry
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                </div>
-
 
                 <div
                     class="reveal"
                     style="text-align:center;margin-top:45px"
                 >
-
                     <p style="color:var(--steel2)">
                         Have a project in mind? We engineer custom steel solutions to your exact requirements.
                     </p>
@@ -1094,18 +535,14 @@
                     >
                         Start Your Project →
                     </a>
-
                 </div>
 
             </div>
-
         </section>
 
     </main>
 
-
     <footer>
-
         <div class="container footer">
 
             <div class="footer-grid">
@@ -1113,7 +550,7 @@
                 <div>
                     <img
                         class="footer-logo"
-                        src="../assets/images/bearma-staal-logo.svg"
+                        src="https://timothyr9.github.io/Bearma_Staal/assets/images/bearma-staal-logo.svg"
                         alt="Bearma Staal"
                     >
 
@@ -1148,7 +585,9 @@
                             Rainier@bearma.co.za
                         </a>
                         <br>
-                        <a href="tel:0218722028">021 872 2028</a>
+                        <a href="tel:0218722028">
+                            021 872 2028
+                        </a>
                         <br>
                         32 Westhoven, Groenvlei, Paarl, 7646
                         <br>
@@ -1182,12 +621,9 @@
             </div>
 
         </div>
-
     </footer>
-
 
     <script src="../script.js"></script>
 
 </body>
-
 </html>
