@@ -15,3 +15,209 @@ footer{background:var(--forge);color:#fff;padding:65px 0 25px;border-top:1px sol
 @media(max-width:1100px){.navlinks{display:none}.navright .phone,.navright .email-mini{display:none}.hamb{display:block}.cards.four{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.two-col{gap:40px}.hero{min-height:700px}}
 @media(max-width:800px){.section{padding:75px 0}.two-col,.contact-grid{grid-template-columns:1fr}.media-card{min-height:380px}.cards,.testimonials,.gallery-grid{grid-template-columns:1fr}.cards.four{grid-template-columns:1fr}.service-category{grid-template-columns:1fr;gap:15px}.service-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column}.hero{min-height:760px;padding-top:150px}.hero-actions .btn{width:100%}.container{width:min(var(--max),calc(100% - 28px))}.logo{height:48px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.gallery-item img,.card,.btn{transition:none}}
+/* =========================================================
+   BEARMA STAAL — BRAND COLOUR / TYPOGRAPHY OVERRIDES
+   Add this section to the END of your existing styles.css.
+   ========================================================= */
+
+:root {
+    --brand-navy: #202936;
+    --brand-navy-dark: #171e28;
+    --brand-blue: #173f68;
+    --brand-blue-light: #245b8f;
+    --brand-orange: #f5a51c;
+    --brand-orange-dark: #d88b00;
+    --brand-white: #ffffff;
+    --brand-light: #f2f4f6;
+    --brand-muted: #b9c2cc;
+    --brand-border: #394552;
+
+    --bg: var(--brand-navy);
+    --navy: var(--brand-navy);
+    --navy2: var(--brand-navy-dark);
+    --steel: var(--brand-light);
+    --steel2: var(--brand-muted);
+    --accent: var(--brand-orange);
+    --orange: var(--brand-orange);
+}
+
+html,
+body {
+    background: var(--brand-navy);
+    color: var(--brand-light);
+}
+
+body,
+p,
+li,
+.meta {
+    color: var(--brand-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--brand-white);
+}
+
+.navlinks a,
+.navright a,
+.mobile-menu a {
+    color: var(--brand-white);
+}
+
+.navlinks a:hover,
+.navright a:hover,
+.mobile-menu a:hover,
+.navlinks a.active {
+    color: var(--brand-orange);
+}
+
+.phone,
+.email-mini {
+    color: var(--brand-light);
+}
+
+.phone:hover,
+.email-mini:hover {
+    color: var(--brand-orange);
+}
+
+.tech,
+.eyebrow .tech,
+.footer-title {
+    color: var(--brand-orange);
+    letter-spacing: 0.08em;
+}
+
+.gallery-caption small {
+    color: var(--brand-orange);
+}
+
+.gallery-caption h3 {
+    color: var(--brand-white);
+}
+
+.gallery-caption .meta {
+    color: var(--brand-muted);
+}
+
+a {
+    color: var(--brand-orange);
+}
+
+a:hover {
+    color: var(--brand-white);
+}
+
+.btn-primary {
+    background: var(--brand-orange);
+    color: var(--brand-navy-dark);
+    border-color: var(--brand-orange);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: var(--brand-white);
+    color: var(--brand-navy-dark);
+    border-color: var(--brand-white);
+}
+
+.filter {
+    background: transparent;
+    color: var(--brand-white);
+    border-color: var(--brand-border);
+}
+
+.filter:hover,
+.filter.active {
+    background: var(--brand-orange);
+    color: var(--brand-navy-dark);
+    border-color: var(--brand-orange);
+}
+
+.gallery-item {
+    background: var(--brand-navy-dark);
+    border-color: var(--brand-border);
+}
+
+.page-hero {
+    background: var(--brand-navy);
+}
+
+.page-hero h1 {
+    color: var(--brand-white);
+}
+
+.page-hero p {
+    color: var(--brand-muted);
+}
+
+.section p {
+    color: var(--brand-light);
+}
+
+footer {
+    background: var(--brand-navy-dark);
+    color: var(--brand-light);
+    border-top-color: var(--brand-border);
+}
+
+footer p,
+footer li,
+footer .copyright {
+    color: var(--brand-muted);
+}
+
+footer a {
+    color: var(--brand-light);
+}
+
+footer a:hover {
+    color: var(--brand-orange);
+}
+
+footer .special {
+    border-color: var(--brand-orange);
+}
+
+.mobile-menu {
+    background: var(--brand-navy-dark);
+    border-top-color: var(--brand-border);
+}
+
+input,
+textarea,
+select {
+    background: #ffffff;
+    color: #202936;
+    border-color: var(--brand-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #687482;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--brand-orange);
+    outline-color: var(--brand-orange);
+}
+
+.eyebrow i {
+    background: var(--brand-orange);
+}
+
+hr {
+    border-color: var(--brand-border);
+}
+
+::selection {
+    background: var(--brand-orange);
+    color: var(--brand-navy-dark);
+}
