@@ -175,3 +175,95 @@ footer{background:var(--forge);color:#fff;padding:65px 0 25px;border-top:1px sol
         font-size: 1.15rem;
     }
 }
+
+
+/* =========================================================
+   GALLERY FILTER FIX
+   ========================================================= */
+
+/* Keep the filter buttons visible, aligned and clickable. */
+.filters {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.filters .filter {
+    position: relative;
+    cursor: pointer;
+    pointer-events: auto;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Selected filter uses the site's existing blue and gold theme. */
+.filters .filter.active {
+    background: var(--gold, #ffad19);
+    color: #0808ed;
+    border-color: var(--gold, #ffad19);
+}
+
+/* Ensure hidden gallery cards cannot be made visible by
+   reveal animations or other CSS rules. */
+.gallery-grid .gallery-item.hidden,
+.gallery-grid .gallery-item[style*="display: none"] {
+    display: none !important;
+}
+
+/* Keep the gallery cards in a consistent responsive grid. */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+
+/* Prevent captions from covering the photographs. */
+.gallery-grid .gallery-item {
+    min-width: 0;
+    align-self: start;
+    overflow: hidden;
+}
+
+.gallery-grid .gallery-item > img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Tablet layout */
+@media (max-width: 1000px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .filters {
+        gap: 8px;
+        margin-bottom: 22px;
+    }
+
+    .filters .filter {
+        padding: 10px 14px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .gallery-grid .gallery-item > img {
+        height: 260px;
+    }
+}
+
