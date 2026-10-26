@@ -19,3 +19,159 @@ footer{background:var(--forge);color:#fff;padding:65px 0 25px;border-top:1px sol
 }
 @media(max-width:800px){.section{padding:75px 0}.two-col,.contact-grid{grid-template-columns:1fr}.media-card{min-height:380px}.cards,.testimonials,.gallery-grid{grid-template-columns:1fr}.cards.four{grid-template-columns:1fr}.service-category{grid-template-columns:1fr;gap:15px}.service-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column}.hero{min-height:760px;padding-top:150px}.hero-actions .btn{width:100%}.container{width:min(var(--max),calc(100% - 28px))}.logo{width:245px;max-width:245px;height:auto;max-height:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.gallery-item img,.card,.btn{transition:none}}
+
+/* =========================================
+   BEARMA STAAL — IMPROVED PROJECT GALLERY
+   Clear photographs and readable descriptions
+   ========================================= */
+
+/* Gallery layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* Individual gallery cards */
+.gallery-grid .gallery-item {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative;
+    height: auto !important;
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff !important;
+    border: 1px solid #d9dee7;
+    border-radius: 0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    color: #17263b;
+}
+
+/* Display photographs without heavy cropping */
+.gallery-grid .gallery-item > img {
+    display: block;
+    position: relative !important;
+    width: 100% !important;
+    height: 300px !important;
+    min-height: 0;
+    max-height: none;
+    object-fit: contain !important;
+    object-position: center;
+    padding: 12px;
+    margin: 0;
+    background: #f3f5f8;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+}
+
+/* Put descriptions underneath photographs */
+.gallery-grid .gallery-caption {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    padding: 22px !important;
+    margin: 0;
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #17263b !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* Remove decorative overlays that obscure photographs */
+.gallery-grid .gallery-item::before,
+.gallery-grid .gallery-item::after,
+.gallery-grid .gallery-caption::before,
+.gallery-grid .gallery-caption::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Category label */
+.gallery-grid .gallery-caption small {
+    display: block;
+    margin: 0;
+    color: #0000ff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+/* Project title */
+.gallery-grid .gallery-caption h3 {
+    margin: 0;
+    color: #17263b !important;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-shadow: none !important;
+}
+
+/* Project information */
+.gallery-grid .gallery-caption .meta {
+    margin-top: 2px;
+    color: #505d70 !important;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    text-shadow: none !important;
+}
+
+/* Gallery filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filters .filter {
+    cursor: pointer;
+}
+
+/* Tablet layout */
+@media (max-width: 1000px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .gallery-grid .gallery-item > img {
+        height: 270px !important;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .gallery-grid .gallery-item > img {
+        height: 250px !important;
+        padding: 10px;
+    }
+
+    .gallery-grid .gallery-caption {
+        padding: 18px !important;
+    }
+
+    .gallery-grid .gallery-caption h3 {
+        font-size: 1.15rem;
+    }
+}
